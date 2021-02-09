@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A04D34B2-92D6-4B91-A0F0-D789CBEBBAB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfApplication5</RootNamespace>
+    <AssemblyName>WpfApplication55</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Tests\_Binding.xaml.cs">
+      <DependentUpon>_Binding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_CheckBox.xaml.cs">
+      <DependentUpon>_CheckBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_ComboBox.xaml.cs">
+      <DependentUpon>_ComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Command.xaml.cs">
+      <DependentUpon>_Command.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_DataGrid.xaml.cs">
+      <DependentUpon>_DataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_DockPanel.xaml.cs">
+      <DependentUpon>_DockPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Expander.xaml.cs">
+      <DependentUpon>_Expander.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Border.xaml.cs">
+      <DependentUpon>_Border.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Button.xaml.cs">
+      <DependentUpon>_Button.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Calendar.xaml.cs">
+      <DependentUpon>_Calendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Canvas.xaml.cs">
+      <DependentUpon>_Canvas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_DatePicker.xaml.cs">
+      <DependentUpon>_DatePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_FlowDocumentPageViewer.xaml.cs">
+      <DependentUpon>_FlowDocumentPageViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_FlowDocumentReader.xaml.cs">
+      <DependentUpon>_FlowDocumentReader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_FlowDocumentScrollViewer.xaml.cs">
+      <DependentUpon>_FlowDocumentScrollViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Grid.xaml.cs">
+      <DependentUpon>_Grid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_GroupBox.xaml.cs">
+      <DependentUpon>_GroupBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Image.xaml.cs">
+      <DependentUpon>_Image.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_ImageBrush.xaml.cs">
+      <DependentUpon>_ImageBrush.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_ItemsControl.xaml.cs">
+      <DependentUpon>_ItemsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Label.xaml.cs">
+      <DependentUpon>_Label.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_ListBox.xaml.cs">
+      <DependentUpon>_ListBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_ListView.xaml.cs">
+      <DependentUpon>_ListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_MediaElement.xaml.cs">
+      <DependentUpon>_MediaElement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Menu.xaml.cs">
+      <DependentUpon>_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_PasswordBox.xaml.cs">
+      <DependentUpon>_PasswordBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_ProgressBar.xaml.cs">
+      <DependentUpon>_ProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_RadioButton.xaml.cs">
+      <DependentUpon>_RadioButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_RichTextBox.xaml.cs">
+      <DependentUpon>_RichTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Slider.xaml.cs">
+      <DependentUpon>_Slider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_StackPanel.xaml.cs">
+      <DependentUpon>_StackPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_StatusBar.xaml.cs">
+      <DependentUpon>_StatusBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Style.xaml.cs">
+      <DependentUpon>_Style.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_TabControl.xaml.cs">
+      <DependentUpon>_TabControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_TextBlock.xaml.cs">
+      <DependentUpon>_TextBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_TextBox.xaml.cs">
+      <DependentUpon>_TextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_ToolBar.xaml.cs">
+      <DependentUpon>_ToolBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_TreeView.xaml.cs">
+      <DependentUpon>_TreeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Trigger.xaml.cs">
+      <DependentUpon>_Trigger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_WebBrowser.xaml.cs">
+      <DependentUpon>_WebBrowser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_WrapPanel.xaml.cs">
+      <DependentUpon>_WrapPanel.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Tests\_Binding.xaml" />
+    <Page Include="Tests\_CheckBox.xaml" />
+    <Page Include="Tests\_ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tests\_Command.xaml" />
+    <Page Include="Tests\_DataGrid.xaml" />
+    <Page Include="Tests\_DockPanel.xaml" />
+    <Page Include="Tests\_Expander.xaml" />
+    <Page Include="Tests\_Border.xaml" />
+    <Page Include="Tests\_Button.xaml" />
+    <Page Include="Tests\_Calendar.xaml" />
+    <Page Include="Tests\_Canvas.xaml" />
+    <Page Include="Tests\_DatePicker.xaml" />
+    <Page Include="Tests\_FlowDocumentPageViewer.xaml" />
+    <Page Include="Tests\_FlowDocumentReader.xaml" />
+    <Page Include="Tests\_FlowDocumentScrollViewer.xaml" />
+    <Page Include="Tests\_Grid.xaml" />
+    <Page Include="Tests\_GroupBox.xaml" />
+    <Page Include="Tests\_Image.xaml" />
+    <Page Include="Tests\_ImageBrush.xaml" />
+    <Page Include="Tests\_ItemsControl.xaml" />
+    <Page Include="Tests\_Label.xaml" />
+    <Page Include="Tests\_ListBox.xaml" />
+    <Page Include="Tests\_ListView.xaml" />
+    <Page Include="Tests\_MediaElement.xaml" />
+    <Page Include="Tests\_Menu.xaml" />
+    <Page Include="Tests\_PasswordBox.xaml" />
+    <Page Include="Tests\_ProgressBar.xaml" />
+    <Page Include="Tests\_RadioButton.xaml" />
+    <Page Include="Tests\_RichTextBox.xaml" />
+    <Page Include="Tests\_Slider.xaml" />
+    <Page Include="Tests\_StackPanel.xaml" />
+    <Page Include="Tests\_StatusBar.xaml" />
+    <Page Include="Tests\_Style.xaml" />
+    <Page Include="Tests\_TabControl.xaml" />
+    <Page Include="Tests\_TextBlock.xaml" />
+    <Page Include="Tests\_TextBox.xaml" />
+    <Page Include="Tests\_ToolBar.xaml" />
+    <Page Include="Tests\_TreeView.xaml" />
+    <Page Include="Tests\_Trigger.xaml" />
+    <Page Include="Tests\_WebBrowser.xaml" />
+    <Page Include="Tests\_WrapPanel.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\image.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

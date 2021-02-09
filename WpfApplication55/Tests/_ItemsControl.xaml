@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPFTests.Tests._ItemsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTests.Tests"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+	    
+	    <ItemsControl>
+            <system:String>ItemsControl Item #1</system:String>
+        </ItemsControl>
+        
+	    <ItemsControl>
+        	<ItemsControl.ItemsPanel>
+        		<ItemsPanelTemplate>
+        			<WrapPanel />
+        		</ItemsPanelTemplate>
+        	</ItemsControl.ItemsPanel>
+        	<ItemsControl.ItemTemplate>
+        		<DataTemplate>
+        			<Button Content="{Binding}" Margin="0,0,5,5" />
+        		</DataTemplate>
+        	</ItemsControl.ItemTemplate>
+        	<system:String>Item #1</system:String>
+        	<system:String>Item #2</system:String>
+        	<system:String>Item #3</system:String>
+        	<system:String>Item #4</system:String>
+        	<system:String>Item #5</system:String>
+        </ItemsControl>
+	    
+	    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+		    <ItemsControl>
+			    <system:String>ItemsControl Item #1</system:String>
+		    </ItemsControl>
+	    </ScrollViewer>
+    </StackPanel>
+</Window>

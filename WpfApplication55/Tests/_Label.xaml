@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="WPFTests.tests._Label"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTests.tests"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+        <Label Content="This is a Label control." />
+
+        <Label Target="{Binding ElementName=TxtName}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="../Assets/image.png" Height="10" />
+                <AccessText Text="_Name:" />
+            </StackPanel>
+        </Label>
+        <TextBox Name="TxtName" />
+        <Label Target="{Binding ElementName=TxtMail}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="../Assets/image.png" Height="10" />
+                <AccessText Text="_Mail:" />
+            </StackPanel>
+        </Label>
+        <TextBox Name="TxtMail" />
+    </StackPanel>
+</UserControl>
