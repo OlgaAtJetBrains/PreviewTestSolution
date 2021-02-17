@@ -94,6 +94,9 @@
     <Compile Include="Tests\_FlowDocumentScrollViewer.xaml.cs">
       <DependentUpon>_FlowDocumentScrollViewer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tests\_Frame.xaml.cs">
+      <DependentUpon>_Frame.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tests\_Grid.xaml.cs">
       <DependentUpon>_Grid.xaml</DependentUpon>
     </Compile>
@@ -202,6 +205,7 @@
     <Page Include="Tests\_FlowDocumentPageViewer.xaml" />
     <Page Include="Tests\_FlowDocumentReader.xaml" />
     <Page Include="Tests\_FlowDocumentScrollViewer.xaml" />
+    <Page Include="Tests\_Frame.xaml" />
     <Page Include="Tests\_Grid.xaml" />
     <Page Include="Tests\_GroupBox.xaml" />
     <Page Include="Tests\_Image.xaml" />

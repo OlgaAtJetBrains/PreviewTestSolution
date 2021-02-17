@@ -7,6 +7,7 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <DockPanel>
+        <TextBlock/>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
                 <MenuItem Header="_New" />
@@ -16,6 +17,7 @@
                 <MenuItem Header="_Exit" />
             </MenuItem>
         </Menu>
-        <TextBox AcceptsReturn="True" />
+        <TextBlock Margin="11"></TextBlock>
+        <TextBox AcceptsReturn="True"/>
     </DockPanel>
 </UserControl>
