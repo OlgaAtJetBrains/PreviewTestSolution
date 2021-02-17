@@ -127,6 +127,9 @@
     <Compile Include="Tests\_Menu.xaml.cs">
       <DependentUpon>_Menu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tests\_Page.xaml.cs">
+      <DependentUpon>_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tests\_PasswordBox.xaml.cs">
       <DependentUpon>_PasswordBox.xaml</DependentUpon>
     </Compile>
@@ -169,8 +172,14 @@
     <Compile Include="Tests\_Trigger.xaml.cs">
       <DependentUpon>_Trigger.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tests\_UserControl.xaml.cs">
+      <DependentUpon>_UserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tests\_WebBrowser.xaml.cs">
       <DependentUpon>_WebBrowser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\_Window.xaml.cs">
+      <DependentUpon>_Window.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tests\_WrapPanel.xaml.cs">
       <DependentUpon>_WrapPanel.xaml</DependentUpon>
@@ -216,6 +225,7 @@
     <Page Include="Tests\_ListView.xaml" />
     <Page Include="Tests\_MediaElement.xaml" />
     <Page Include="Tests\_Menu.xaml" />
+    <Page Include="Tests\_Page.xaml" />
     <Page Include="Tests\_PasswordBox.xaml" />
     <Page Include="Tests\_ProgressBar.xaml" />
     <Page Include="Tests\_RadioButton.xaml" />
@@ -230,7 +240,9 @@
     <Page Include="Tests\_ToolBar.xaml" />
     <Page Include="Tests\_TreeView.xaml" />
     <Page Include="Tests\_Trigger.xaml" />
+    <Page Include="Tests\_UserControl.xaml" />
     <Page Include="Tests\_WebBrowser.xaml" />
+    <Page Include="Tests\_Window.xaml" />
     <Page Include="Tests\_WrapPanel.xaml" />
   </ItemGroup>
   <ItemGroup>

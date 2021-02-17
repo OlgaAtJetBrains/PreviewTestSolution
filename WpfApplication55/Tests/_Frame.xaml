@@ -5,8 +5,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:WpfApplication5.Tests"
         mc:Ignorable="d"
-        Title="_Frame" Height="400" Width="300">
-    <StackPanel>  
-        <Frame Source="_ItemsControl.xaml"/>  
+        Title="_Frame" >
+    <StackPanel>
+        <TextBlock>Window</TextBlock>  
+        <Frame Source="_Window.xaml"/> 
+        <TextBlock>Page</TextBlock>  
+        <Frame Source="_Page.xaml"/>  
+        <TextBlock>User Control</TextBlock>  
+        <Frame>
+            <Frame.Source>_UserControl.xaml</Frame.Source>
+            <Frame.LayoutTransform>  
+                <RotateTransform Angle="45" />  
+            </Frame.LayoutTransform> 
+        </Frame>
     </StackPanel>
 </Window>
